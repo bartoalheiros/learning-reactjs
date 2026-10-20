@@ -17,7 +17,7 @@ const links = [
     name: 'OS',
     icon: DocumentDuplicateIcon,
     submenu: [
-      { name: 'Criar Nova', href: '/dashboard/os/cadastrar' },
+      { name: 'Cadastrar nova', href: '/dashboard/os/cadastrar' },
     ],
   },
   { name: 'Clientes', href: '/dashboard/clientes', icon: UserGroupIcon },
