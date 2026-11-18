@@ -9,6 +9,7 @@ import {
   DocumentDuplicateIcon,
   ChevronDownIcon, // Novo ícone para indicar o submenu
 } from '@heroicons/react/24/outline';
+import clsx from 'clsx';
 
 // 1. Atualizamos a estrutura para aceitar uma propriedade opcional de 'submenu'
 const links = [
@@ -24,6 +25,8 @@ const links = [
 ];
 
 export default function NavLinks() {
+  const pathname = usePathname();
+
   return (
     <>
       {links.map((link) => (
